@@ -42,8 +42,7 @@ async def run(
     Run the agent with the OpenAI Agents SDK. Uses DbBackedSession for history and AgentContext for tools.
     Returns (conversation_id, response_text, tool_calls_list).
     """
-    # api_key = get_openai_api_key()
-    api_key = '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'
+    api_key = get_openai_api_key()
     if not api_key:
         return (
             conversation_id,
